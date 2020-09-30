@@ -1,0 +1,70 @@
+
+
+.showResult{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  //align-items: center;
+  .main{
+    margin-top: 2.8rem;
+    position: relative;
+    padding: 0.8rem 0.65rem 0.3rem 0.65rem ;
+    box-sizing: border-box;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: space-around;
+
+    width:5.5rem;
+    //height:5rem;
+    background:rgba(255,255,255,1);
+    color: #666666;
+    line-height:0.42rem;
+    font-size: 0.32rem;
+    .close{
+      position: absolute;
+      right: 0.3rem;
+      top: 0.3rem;
+      width: 0.36rem;
+      height: 0.36rem;
+    }
+
+    .button{
+      //display: flex;
+      //justify-content: space-between;
+      margin-top: 0.3rem;
+      margin-bottom: 0.2rem;
+      button{
+        height:0.5rem;
+        width: 1.5rem;
+        border-radius:0.25rem;
+        font-size: 0.24rem;
+        color: #FFFFFF;
+        font-family:Arial;
+        font-weight:400;
+      }
+      .commit{
+        background: #999999;
+        margin-left: 0.3rem;
+      }
+      .cancel{
+        background:rgba(8,98,181,1);
+
+      }
+    }
+
+    .title{
+      font-size:0.3rem;
+      font-weight:bold;
+      color:rgba(51,51,51,1);
+      margin-bottom: 0.5rem;
+    }
+  }
+}

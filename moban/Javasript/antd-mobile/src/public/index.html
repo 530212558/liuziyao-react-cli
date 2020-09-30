@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- set `maximum-scale` for some compatibility issues -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+        ~(function(){
+            var computed = function(){
+                var desW = 750; //设置稿宽度
+                var devW = document.documentElement.clientWidth;  //可视区宽度
+                // if(devW >= 750){
+                //   document.documentElement.style.fontSize = 200+"px";  //设置html结构的font-size
+                //   return;
+                // }
+                document.documentElement.style.fontSize = devW/desW*1+"px";   //1REM 代表100px
+            }
+            computed();
+            window.addEventListener('resize',computed,false); //当窗口大小改变时迟发函数
+        })();
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+        if(!window.Promise) {
+            document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+        }
+    </script>
+
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

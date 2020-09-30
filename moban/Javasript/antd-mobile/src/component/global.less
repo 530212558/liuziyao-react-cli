@@ -1,0 +1,94 @@
+:global(body){
+  background: #ffffff;
+}
+:global(button){
+  border: none;
+}
+:global(.am-wingblank) {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+:global(.am-wingblank.am-wingblank-sm) {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+:global(.am-wingblank.am-wingblank-md) {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+:global(.am-wingblank.am-wingblank-lg) {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+:global(.am-list-content){
+  color: #0862B5 !important;
+  font-size: 18px !important;
+}
+
+:global(html:not([data-scale]) .am-accordion::before),:global(html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-header::after),
+:global(html:not([data-scale]) .am-list-body::after){
+  display: none;
+}
+:global(.am-accordion-header){
+  color: #333333 !important;
+  font-family:Arial;
+  font-weight:bold;
+  //background: #0862B5 !important;
+}
+:global(.am-accordion-item){
+  border-bottom: 1px solid #ddd !important;
+}
+:global(.am-accordion-header .arrow){
+  color: #ffffff !important;
+  background-image: url(../public/img/icon-Under.png) !important;
+  transform: rotate(270deg) !important;
+}
+:global(.am-accordion-item-active .am-accordion-header){
+  color: #ffffff !important;
+  background: #0862B5 !important;
+
+}
+:global(.am-accordion-item-active .am-accordion-header .arrow){
+  transform: rotate(360deg) !important;
+}
+:global(.container){
+  padding: 0 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+:global(.toTop){
+  position: fixed;
+  z-index: 1;
+  right: 0.3rem;
+  bottom: 1.8rem;
+  width:0.5rem;
+  height:0.5rem;
+
+  background:rgba(8,98,181,1);
+  border-radius:0.08rem;
+  border: none;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width:0.20rem;
+    height:0.14rem;
+  }
+}
+*{
+  font-family:Arial;
+}
+
+// .class:nth-child(odd) 奇数子元素(同nth-child(2n-1))
+// .class:nth-child(even) 偶数子元素(同nth-child(2n))
+
+//overflow:hidden;
+//text-overflow:ellipsis;
+//display:-webkit-box;
+//-webkit-box-orient:vertical;
+//-webkit-line-clamp:2;
